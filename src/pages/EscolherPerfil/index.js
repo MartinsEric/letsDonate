@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image } from 'react-native'
+import { Image, Button } from 'react-native'
 
 import Botao from '../../components/Botao'
 
@@ -16,7 +16,7 @@ import {
 
 import logoImg from '../../../assets/LetsDonateLogo.png'
 
-export default function EscolherPerfil() {
+export default function EscolherPerfil({navigation}) {
   return (
     <Container>
       <Header>
@@ -30,8 +30,8 @@ export default function EscolherPerfil() {
         <TextoPerfil>Para começarmos, escolha o seu perfil:</TextoPerfil>
 
         <BotaoContainer>
-          <Botao label="Doador"></Botao>
-          <Botao label="Instituição"></Botao>
+          <Botao label="Doador" onPress={() => navigation.push('Login')}></Botao>
+          <Botao label="Instituição" onPress={() => navigation.push('Login')}></Botao>
         </BotaoContainer>
       </Main>
     </Container>

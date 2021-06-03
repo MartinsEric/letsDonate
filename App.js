@@ -1,21 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import EscolherPerfil from './src/pages/EscolherPerfil'; 
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Welcome to letsDonate!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <EscolherPerfil></EscolherPerfil>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

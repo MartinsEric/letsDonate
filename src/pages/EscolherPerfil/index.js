@@ -30,8 +30,8 @@ export default function EscolherPerfil({navigation}) {
         <TextoPerfil>Para começarmos, escolha o seu perfil:</TextoPerfil>
 
         <BotaoContainer>
-          <Botao label="Doador" onPress={() => navigation.push('Login')}></Botao>
-          <Botao label="Instituição" onPress={() => navigation.push('Login')}></Botao>
+          <Botao label="Doador" onPress={() => navigation.push('Login', {perfil: 'doador'})}></Botao>
+          <Botao label="Instituição" onPress={() => navigation.push('Login', {perfil: 'instituicao'})}></Botao>
         </BotaoContainer>
       </Main>
     </Container>

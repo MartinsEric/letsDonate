@@ -7,8 +7,6 @@ export const BotaoStyle = styled.TouchableOpacity`
   border-width: 1px;
   border-color: #800080;
   border-radius: 5px;
-
-  margin-left: 5px;
 `;
 
 export const Label = styled.Text`

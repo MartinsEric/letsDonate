@@ -9,6 +9,7 @@ justify-content: center;
 `;
 
 export const Title = styled.Text`
+  text-align: center;
   font-size: 22px;
   font-weight: bold;
   color: #800080;
@@ -16,27 +17,33 @@ export const Title = styled.Text`
   margin-bottom: 15px;
 `;
 
-export const LoginCard = styled.View`
+export const DashboardCard = styled.View`
+  width: 100%;
+  
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   elevation: 5;
 `;
 
-export const Input = styled.TextInput`
-  height: 40px;
-
-  border-width: 1px;
-  border-color: #800080;
-  border-radius: 5px;
-
-  margin-top: 10px;
-  padding: 10px;
-`;
-export const BotoesContainer = styled.View`
+export const InfoContainer = styled.View`
 width: 100%;
 flex-direction: row;
-justify-content: flex-end;
+justify-content: flex-start;
+
+margin-top: 10px;
+`;
+
+export const Label = styled.Text`
+  color: #bfbfae;
+`;
+
+export const TextInfo = styled.Text`
+  color: #bfbfae;
+`;
+
+export const BotaoContainer = styled.View`
+width: 100%;
 
 margin-top: 20px;
 `;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Image, Button } from 'react-native'
 
 import Botao from '../../components/Botao'
@@ -15,8 +15,16 @@ import {
 } from './style'
 
 import logoImg from '../../../assets/LetsDonateLogo.png'
+import { PerfilContext } from '../../contexts/perfil'
 
 export default function EscolherPerfil({navigation}) {
+  const { handlePerfil } = useContext(PerfilContext);
+
+  function handleEscolha(perfil) {
+    handlePerfil(perfil);
+    navigation.push("Login");
+  }
+
   return (
     <Container>
       <Header>
@@ -30,8 +38,8 @@ export default function EscolherPerfil({navigation}) {
         <TextoPerfil>Para começarmos, escolha o seu perfil:</TextoPerfil>
 
         <BotaoContainer>
-          <Botao label="Doador" onPress={() => navigation.push('Login', {perfil: 'doador'})}></Botao>
-          <Botao label="Instituição" onPress={() => navigation.push('Login', {perfil: 'instituicao'})}></Botao>
+          <Botao label="Doador" onPress={() => { handleEscolha("doador") }}></Botao>
+          <Botao label="Instituição" onPress={() => { handleEscolha("instituicao") }}></Botao>
         </BotaoContainer>
       </Main>
     </Container>

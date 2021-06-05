@@ -16,7 +16,7 @@ export const Title = styled.Text`
   margin-bottom: 15px;
 `;
 
-export const LoginCard = styled.View`
+export const CadastroCard = styled.View`
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -33,6 +33,12 @@ export const Input = styled.TextInput`
   margin-top: 10px;
   padding: 10px;
 `;
+
+export const EnderecoContainer = styled.View`
+width: 100%;
+flex-direction: row;
+`;
+
 export const BotoesContainer = styled.View`
 width: 100%;
 flex-direction: row;
@@ -40,5 +46,3 @@ justify-content: flex-end;
 
 margin-top: 20px;
 `;
-
-
